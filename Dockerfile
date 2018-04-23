@@ -8,4 +8,5 @@ RUN apk -v --update add \
     pip install --upgrade awscli && \
     apk -v --purge del py-pip && \
     rm /var/cache/apk/*
+RUN aws configure set default.region us-east-2
 WORKDIR /project
