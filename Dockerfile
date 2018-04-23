@@ -7,3 +7,4 @@ RUN apk -v --update add \
     pip install --upgrade awscli && \
     apk -v --purge del py-pip && \
     rm /var/cache/apk/*
+WORKDIR /project
