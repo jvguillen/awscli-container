@@ -3,6 +3,7 @@ RUN apk -v --update add \
         python \
         py-pip \
         jq \
+        ca-certificates \
         && \
     pip install --upgrade awscli && \
     apk -v --purge del py-pip && \
